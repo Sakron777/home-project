@@ -1575,13 +1575,13 @@ textarea.form__input {
 
 @media screen and (max-width: 520px) {
   .beloved__item-text {
-    font-size: 8px;
+    font-size: 5px;
     padding: 12px 10px;
     line-height: 12px;
   }
 
   .beloved__item-link {
-    font-size: 8px;
+    font-size: 5px;
     padding: 12px 10px;
     line-height: 12px;
   }
