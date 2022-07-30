@@ -1,0 +1,159 @@
+.beloved {
+    background: $blue_04;
+    border-radius: 200px 0px 0px 0px;
+    margin-top: 100px;
+    padding-top: 96px;
+    padding-bottom: 125px;
+    height: 470px;
+}
+
+.beloved__one {
+    display: flex;
+    margin-bottom: 111px;
+
+    @include breakpoint($tablet-bp) {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+.beloved__one-title {
+    width: 224px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    margin-right: 97px;
+
+    /* or 128% */
+
+    letter-spacing: 0.05em;
+
+    /* white */
+
+    color: #FFFFFF;
+
+    @include breakpoint($tablet-bp) {
+        text-align: center;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.beloved__one-text {
+    width: 540px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    /* or 162% */
+
+    letter-spacing: 0.05em;
+
+    /* white */
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.beloved__two {
+
+    width: 100%;
+    max-width: 940px;
+    height: auto;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #5a99cf;
+}
+
+
+
+.beloved__item {
+
+    TD,
+    TH {
+        border: 1px solid #9dc1e3;
+    }
+}
+
+.beloved__item-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 46px;
+    padding: 42px 40px;
+    transition: all .3s;
+
+    /* identical to box height, or 230% */
+
+    letter-spacing: 0.02em;
+
+    /* white */
+
+    color: #FFFFFF;
+    text-align: center;
+
+    &--blue_01 {
+
+        &:hover {
+            background: #4e87bc;
+        }
+    }
+
+    @include breakpoint($tablet-bp) {
+        font-size: 16px;
+        padding: 22px 20px;
+        line-height: 22px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 12px;
+        padding: 14px 13px;
+        line-height: 14px;
+    }
+
+    @include breakpoint($mobile-52) {
+        font-size: 8px;
+        padding: 12px 10px;
+        line-height: 12px;
+    }
+}
+
+.beloved__item-link {
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 17px 0 17px;
+    text-align: center;
+
+    /* identical to box height, or 230% */
+
+    letter-spacing: 0.02em;
+
+    /* white */
+
+    color: #FFFFFF;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 16px;
+        padding: 22px 20px;
+        line-height: 22px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 12px;
+        padding: 14px 13px;
+        line-height: 14px;
+    }
+
+    @include breakpoint($mobile-52) {
+        font-size: 8px;
+        padding: 12px 10px;
+        line-height: 12px;
+    }
+
+}

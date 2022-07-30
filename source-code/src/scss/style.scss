@@ -1,0 +1,55 @@
+@import "vars";
+@import "reset";
+@import "mixins";
+@import "fonts";
+
+
+html{
+    font-size: 14px;
+    width: 100%;
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gilroy', 'Lato', sans-serif;
+    font-size: 14px;
+    background-color: white;
+    color: #fff;
+
+    line-height: 1.5;
+}
+
+body.lock{
+    overflow: hidden;
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &:hover{
+        text-decoration: underline
+    }
+}
+
+
+//bloks
+@import "blocks/burger";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/main";
+@import "blocks/page";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/help";
+@import "blocks/beloved";
+@import "blocks/footer";
+@import "blocks/popup";
+@import "blocks/form";
+

@@ -1,0 +1,48 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+
+
+    text-align: center;
+    padding: 15px 74px;
+    margin: 74px auto 0 auto;
+
+
+    border: none;
+    background: $blue_04;
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        background: $blue_03;
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin: 0 auto 0 auto;
+    }
+
+    &--form {
+        margin: 0 auto 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        font-weight: 500;
+        transition: all .3s;
+
+        &:hover{
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+            border-radius: 10px;
+        }
+
+    }
+}

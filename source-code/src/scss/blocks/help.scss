@@ -1,0 +1,188 @@
+.help {
+    margin-top: 192px;
+    position: relative;
+}
+
+.help__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.help__title {
+    width: 360px;
+
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+
+    /* or 128% */
+
+    letter-spacing: 0.05em;
+
+    /* blue_02 */
+
+    color: $blue_02;
+
+    position: absolute;
+    top: 0;
+
+    @include breakpoint($tablet-bp) {
+        position: static;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
+
+
+.help__item {
+    width: 284px;
+    padding: 0 48px 48px 48px;
+
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    position: relative;
+    margin: 0 50px 100px 50px;
+
+    animation: help__item 15s alternate infinite;
+
+
+    transition: all .3s;
+
+
+    @include breakpoint($mobile-br) {
+        padding: 0 12px 48px 12px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+
+
+}
+
+
+
+@keyframes help__item {
+    0% {
+        transform: scale(0.9);
+    }
+
+    25% {
+        transform: translate3d(0, 55px, 0);
+    }
+
+    75% {
+        transform: translate3d(0px, -55px, 0);
+
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+
+.help__iteb-block {
+    height: 235px;
+}
+
+.help__item-img {
+    position: absolute;
+
+    left: 50%;
+    right: 50%;
+    top: -20px;
+
+
+    transform: translate(-50%, 0);
+
+    &--block {
+        position: absolute;
+
+        left: 45%;
+        right: 50%;
+        top: 48px;
+
+        transform: translate(-50%, 0);
+    }
+
+
+}
+
+.help__item-title {
+    width: 286px;
+
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+    /* or 150% */
+
+    letter-spacing: 0.05em;
+
+    /* Blue_01 */
+
+    color: $blue_01;
+
+    @include breakpoint($mobile-br) {
+        font-size: 15px;
+    }
+}
+
+.help__item-text {
+    width: 284px;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 32px;
+
+    /* or 162% */
+
+    letter-spacing: 0.05em;
+
+    /* Blue_01 */
+
+    color: $blue_01;
+
+    opacity: 0.6;
+
+    @include breakpoint($mobile-br) {
+        font-size: 12px;
+    }
+}
+
+.help__flex-link {
+    display: flex;
+}
+
+.help__item-link {
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+
+
+    letter-spacing: 0.05em;
+    transition: all .3s;
+
+    /* blue_04 */
+
+    color: $blue_04;
+
+    padding-right: 5px;
+
+    &:hover {
+        padding-right: 28px;
+    }
+
+}

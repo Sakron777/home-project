@@ -1,0 +1,154 @@
+
+
+.intro{
+    position: relative;
+}
+
+.intro__gradient {
+    height: 100%;
+    width: 100%;
+    min-height: 688px;
+    background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    opacity: 0.2;
+
+    -webkit-background-size: 100%;
+    background-size: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.intro__content{
+
+    margin-bottom: 392px;
+
+    @include breakpoint($tablet-365) {
+        margin-bottom: 100px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        margin-bottom: 100px;
+    }
+}
+
+
+.intro__inner {
+    display: flex;
+    margin-top: 10px;
+
+    position: relative;
+
+
+    @include breakpoint($tablet-365) {
+        flex-direction: column;
+    }
+}
+
+.intro__left {
+    @include breakpoint($tablet-365) {
+        margin: 0 auto 50px auto;
+        text-align: center;
+
+    }
+}
+
+.intro__left-title {
+    margin-top: 101px;
+    width: 564px;
+
+    font-family: 'Galien';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 74px;
+    /* or 116% */
+
+    letter-spacing: 0.04em;
+
+    /* Blue_01 */
+
+    color: $blue_01;
+
+    @include breakpoint($tablet-365) {
+        width: 100%;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 38px;
+    }
+}
+
+.intro__left-text {
+    width: 425px;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    /* or 162% */
+    margin: 32px 0 71px 0;
+
+    letter-spacing: 0.05em;
+
+    /* Blue_01 */
+
+    color: $blue_01;
+
+    opacity: 0.6;
+
+    @include breakpoint($tablet-365) {
+        width: 100%;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 12px;
+    }
+}
+
+.intro__left-link {
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    padding: 15px 48px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+
+    background: $blue_04;
+
+    border-radius: 10px;
+
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    }
+}
+
+.intro__right {
+    @include breakpoint($tablet-365) {
+        margin: 0 auto;
+    }
+}
+
+.intro__right-img {
+    position: absolute;
+    top: 0;
+    right: -190px;
+
+    @include breakpoint($tablet-365) {
+        position: static;
+        margin: 0 auto;
+    }
+
+    @include breakpoint($mobile-bp) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
